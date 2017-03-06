@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <script src="jquery-3.1.1.min.js"></script>
+        <script src="ravi_v01.js"></script>
+        <script>    
+            var slideinfo = [
+                {
+                    slideNo : 1,
+                    slideName : "first",
+                    slideSrc : "slidesrc",
+                    slideDescription: "slide description"
+                },
+                {
+                    slideNo : 2,
+                    slideName : "second",
+                    slideSrc : "slidesrc",
+                    slideDescription: "slide description"
+                },
+                {
+                    slideNo : 3,
+                    slideName : "third",
+                    slideSrc : "slidesrc",
+                    slideDescription: "slide description"
+                },
+                {
+                    slideNo : 4,
+                    slideName : "fourth",
+                    slideSrc : "slidesrc",
+                    slideDescription: "slide description"
+                }
+
+            ]
+
+            var r = ravi();
+            r.addSlides(slideinfo).slideShowInit();
+
+        </script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="log">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h1>First part</h1>
+                    </div>
+                    <div class="col-sm-4">
+                        <h1>Second part</h1>
+                    </div>
+                    <div class="col-sm-4">
+                        <h1>Third part </h1>
+                    </div>
+                </div>          
+            </div>
+       </div>
+
+
+    </body>
+</html>
