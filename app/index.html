@@ -1,24 +1,36 @@
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
-        <script src="jquery-3.1.1.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="ravi_v01.js"></script>
+       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
         <style>
 
-            body{
-                    background-color: #24c3d3;
-                    font-family: 'Lato', sans-serif;
-                    color: white;                
-            };
-
-            .main-title{
-                text-align:center;
-                font-size:26px;
+            .main-title {
+                    background-color: white;
+                    font-family: 'Tangerine', serif;
+                    font-size: 82px;
+                    text-shadow: 3px 3px 3px #BDBDBD;
+                    color: #9E9E9E;
+                    text-align: center;
             }
-
-
-
-        </style>
+            .stage1{
+                text-align:center;
+            }
+            .voicelog{
+                background-color: black;
+                font-size: 14px;
+                position: absolute;
+                color: white;
+                font-style: inherit;
+                font-family: monospace;
+                bottom: 0px;
+                right: 0px;
+                padding: 11px;
+                width: 100%;
+            }
+     </style>
         <script>    
             var slideinfo = [
                 {
@@ -56,24 +68,21 @@
     </head>
     <body>
         <div class="main-title">
-                <h1>Ravi Voice Control to Presentation</h1>
+                <p>Ravi_v01.js</p>
         </div>
-        <div class="container">
-            <div class="log">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h1>First part</h1>
-                    </div>
-                    <div class="col-sm-4">
-                        <h1>Second part</h1>
-                    </div>
-                    <div class="col-sm-4">
-                        <h1>Third part </h1>
-                    </div>
-                </div>          
-            </div>
-       </div>
+
+        <div class="voicelog">
+            <p class="logtxt">
+                Say Hi ravi
+            </p>
+            <p class="nxt" style="display:none">
+                Who Are You
+            <p>
+        </div>
 
 
+        <div class="stage1">
+            <p class="logtxt"> </p>
+        </div>
     </body>
 </html>

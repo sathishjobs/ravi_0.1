@@ -114,6 +114,18 @@ if(!$){
         speechReply : function(){
 
         },
+        renderlog: function(recognitiedWord,slideShowInitObj){
+            if($(".logtxt").text().trim().toLowerCase() == "say hi ravi")
+            {
+                $(".logtxt").html("You Said : "+recognitiedWord);
+                $(".nxt").css("display","block");        
+            }
+            else{
+                $(".logtxt").append(" "+recognitiedWord);
+                $(".nxt").css("display","none");        
+
+            }
+        },
         getSlidesInfo : function(){
             var slideInfo = (this.slideShowInfo.length > 0) ? this.slideShowInfo :  "Nothing found";
             return slideInfo;
@@ -123,11 +135,14 @@ if(!$){
             slideShowInit.onresult = evt =>{
                     if(result = /(hi|Ravi|ravi) (dummy|hi|ravi|Ravi)$/g.exec(evt.results[evt.results.length-1][0].transcript)){
                         if(result[0] == "hi Ravi"){
-                            console.log("ravi is triggered");
+                            
                         }
-                        
-                    } 
-                    console.log(evt.results[evt.results.length-1][0].transcript); 
+                    }
+                   var transcript = evt.results[evt.results.length-1][0].transcript;
+                   this.renderlog(evt.results[evt.results.length-1][0].transcript);
+                   //console.log(ravi.call(this,renderlog2));
+                   console.log(this);
+                   console.log(evt.results[evt.results.length-1][0].transcript); 
             };
             slideShowInit.continuous = true;
             slideShowInit.start();
