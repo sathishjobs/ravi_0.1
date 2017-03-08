@@ -84,6 +84,9 @@ if(!$){
             return this;
 
         },
+        renderDefaultView(){
+            console.log("Default preview is triggered");
+        },
         addSlide : function(){
 
         },
