@@ -1,48 +1,26 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="ravi_v01.css" type="text/css">
+        
+       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+    </head>
+    <body>
+
+        <div class="raviResponseBox">
+            <p id='raviResponse'></p>
+        </div>
+        <div class="renderAvailableOptions">
+
+        </div>
+        <div class="speechloger">
+            
+        </div>
+        <!-- script part -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="ravi_v01.js"></script>
-       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
-        <style>
-
-            .main-title {
-                    background-color: white;
-                    font-family: 'Tangerine', serif;
-                    font-size: 82px;
-                    text-shadow: 3px 3px 3px #BDBDBD;
-                    color: #9E9E9E;
-                    text-align: center;
-            }
-
-            .header{
-                    margin: 0px;
-                    height: 98px;
-                    /* width: 100px; */
-                    background-color: cornflowerblue;
-                    border-bottom: 2px solid #E0E0E0;
-            }
-
-            .stage1{
-                text-align:center;
-            }
-            .voicelog{
-                background-color: black;
-                font-size: 14px;
-                position: absolute;
-                color: white;
-                font-style: inherit;
-                font-family: monospace;
-                bottom: 0px;
-                right: 0px;
-                padding: 11px;
-                width: 100%;
-            }
-
-           
-     </style>
-        <script>    
+                <script>    
             var slideinfo = [
                 {
                     slideNo : 1,
@@ -75,31 +53,6 @@
             r.addSlides(slideinfo).slideShowInit();
 
         </script>
-
-    </head>
-    <body>
-
-          <div class="header one-edge-shadow">
-
-
-          </div>
-
-       <!-- <div class="main-title">
-                <p>Ravi_v01.js</p>
-        </div> -->
-
-        <div class="voicelog">
-            <p class="logtxt">
-                Say Hi ravi
-            </p>
-            <p class="nxt" style="display:none">
-                Who Are You
-            <p>
-        </div>
-
-
-        <div class="stage1">
-            <p class="logtxt"> </p>
-        </div>
+        <!-- end script part -->
     </body>
 </html>

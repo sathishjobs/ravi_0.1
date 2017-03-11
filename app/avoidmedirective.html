@@ -1,0 +1,36 @@
+<html>
+    <head>
+       <style>
+        body {
+  background-color:#ce3635;
+  text-align: center;
+  color:#fff;
+  padding-top:10em;
+}
+
+* { color:#fff; text-decoration: none;}
+
+        </style>
+    </head>
+    <body>
+        <p id="myTypeingText"></p>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+  
+        var animateString ="ravi this is my first text";
+        var myArray = animateString.split("");
+        var loopTimer;
+        frameLooper = function(){
+            if(myArray.length>0){
+                document.getElementById("myTypeingText").innerHTML += myArray.shift();
+            } else {
+                clearTimeout(loopTimer);
+            }
+            loopTimer = setTimeout(frameLooper,120);
+        }
+        frameLooper();
+    
+</script>
+    </body>
+</html>

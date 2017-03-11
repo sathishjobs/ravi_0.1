@@ -1,0 +1,55 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #9575CD;
+}
+.speechloger{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(103, 58, 183, 0.41);
+    display: none;
+    padding: 4px;
+    margin: 0px;
+    color: white;
+    font-family: monospace;
+}
+
+/* Intro text animation styles */
+#raviResponse{
+   position: absolute;
+    left: 20%;
+    top: 30%;
+    color: white;
+    font-family: monospace;
+    font-size: 26px;
+    text-transform: capitalize;
+    width: 50%;
+    text-align: justify;
+    padding: 6px;
+    text-indent: 60px;
+}
+/* End Intro text animation styles */
+.introText{
+    text-align: center;
+    position: relative;
+    top: 38%;
+}
+
+.renderAvailableOptions{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(103, 58, 183, 0.41);
+    padding: 4px;
+    margin: 0px;
+    color: white;
+    font-family: monospace;
+}
+
+.renderAvailableOptions ul li{
+    list-style-type: none;
+    display:inline;
+}
